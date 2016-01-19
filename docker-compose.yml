@@ -1,0 +1,13 @@
+postgres:
+  build: ./gitrob-psql
+
+gitrob:
+  build: ./gitrob
+  links:
+    - postgres
+  environment:
+    - GITROB_PSQL_PORT_5432_TCP_ADDR=postgres
+    - GITROB_PSQL_PORT_5432_TCP_PORT=5432
+  env_file: .env
+  ports:
+    - "9393"

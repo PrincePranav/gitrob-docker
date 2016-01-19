@@ -1,9 +1,5 @@
-#================#
-#   BASIC INFO   #
-#================#
-
 FROM debian:wheezy
-MAINTAINER aykit "code@aykit.org"
+MAINTAINER aykit <code@aykit.org>
 
 
 #=========================#
@@ -23,9 +19,9 @@ COPY pg_hba.conf /etc/postgresql/9.1/main/
 COPY postgresql.conf /etc/postgresql/9.1/main/
 
 
-#=====================#
-#   FUN WITH DOCKER   #
-#=====================#
+#============#
+#   RUNTIME  #
+#============#
 
 EXPOSE 5432
 

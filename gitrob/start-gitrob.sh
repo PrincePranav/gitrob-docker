@@ -1,6 +1,11 @@
 #!/bin/bash
 
-echo "sql_connection_uri: postgres://gitrob:@$GITROB_PSQL_PORT_5432_TCP_ADDR:$GITROB_PSQL_PORT_5432_TCP_PORT/gitrob" >> /root/.gitrobrc
+cat > /root/.gitrobrc <<EOF
+---
+github_access_tokens:
+- ${GITHUB_API_KEY}
+sql_connection_uri: postgres://gitrob:@${GITROB_PSQL_PORT_5432_TCP_ADDR}:${GITROB_PSQL_PORT_5432_TCP_PORT}/gitrob
+EOF
 
 echo -e "
 Gitrob is designed for security professionals. If you use any information
