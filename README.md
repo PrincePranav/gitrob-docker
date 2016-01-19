@@ -7,7 +7,7 @@ Forked from [aykit/gitrob-docker](https://github.com/aykit/gitrob-docker).
 
 ## Gitrob
 
-[Gitrob][gitrob] is a tool which, using the GitHub API, scans related repositories for things which may be useful to an attacker. This includes passwords, SQL dumps, API keys and much more.
+[Gitrob][gitrob] is a tool which, using the GitHub API, scans related repositories for things which may be useful to an attacker. This includes passwords, SQL dumps, API keys and much more. Gitrob is only to be used for detecting and correcting your own vulnerabilities, do not use it against others without permission.
 
 **Gitrob is no longer being actively developed, the author is currently working on its successor.**
 
